@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-// import css from "./profile.module.css";
+import css from "./profile.module.css";
 
 const Profile = ({
   name,
@@ -9,24 +9,26 @@ const Profile = ({
   stats: { followers, views, likes },
 }) => {
   return (
-    <div className="container">
-      <div>
-        <img src={image} alt="User avatar" />
+    <div className={css.box}>
+      <div className={css.userBox}>
+        <img className={css.userImg} src={image} alt={`${name} avatar`} />
         <p>{name}</p>
-        <p>@{tag}</p>
+        <p>{tag}</p>
         <p>{location}</p>
       </div>
 
-      <ul className="list">
-        <li>
+      <ul className={css.userList}>
+        <li className={css.userInfo}>
           <span>Followers</span>
           <span>{followers}</span>
         </li>
-        <li>
+
+        <li className={css.userInfo}>
           <span>Views</span>
           <span>{views}</span>
         </li>
-        <li>
+
+        <li className={css.userInfo}>
           <span>Likes</span>
           <span>{likes}</span>
         </li>
@@ -34,6 +36,7 @@ const Profile = ({
     </div>
   );
 };
+
 Profile.propTypes = {
   name: PropTypes.string.isRequired,
   tag: PropTypes.string.isRequired,
