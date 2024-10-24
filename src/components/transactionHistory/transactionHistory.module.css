@@ -1,0 +1,27 @@
+.tableMenu {
+  background-color: #2a2f2f;
+  color: #fff;
+}
+
+table {
+  margin: 20px auto;
+  border: 2px solid black;
+}
+
+thead {
+  border: 2px solid black;
+}
+
+.tableMenu th {
+  padding: 7px 50px;
+  border: 2px solid black;
+}
+
+.tableItems td {
+  border: 2px solid black;
+  text-align: center;
+}
+
+.tableItems tr:nth-child(even) {
+  background-color: #9eabac;
+}

@@ -1,0 +1,57 @@
+.userBlock {
+  width: 320px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+.userTopBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px;
+}
+
+.userImg {
+  max-width: 50%;
+  border-radius: 50%;
+  background-color: black;
+}
+
+.userTopBlock > p {
+  font-size: 16px;
+  color: hsl(0, 2.8%, 41.6%);
+}
+
+.userTopBlock p:nth-child(2) {
+  color: black;
+}
+
+.userList {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  border-top: 2px solid black;
+  background-color: hsl(0, 2.8%, 70.6%);
+  margin: 0;
+}
+
+.userInfo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  gap: 10px;
+  width: 33.3%;
+}
+
+.userInfo span:last-child {
+  font-weight: 600;
+}
+
+.userList li:not(:last-child) {
+  border-right: 2px solid black;
+}
